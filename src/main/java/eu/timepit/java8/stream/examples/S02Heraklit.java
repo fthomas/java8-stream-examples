@@ -2,7 +2,10 @@ package eu.timepit.java8.stream.examples;
 
 import java.util.stream.IntStream;
 
-public class Main02 {
+/**
+ * You could not step twice into the same river
+ */
+public class S02Heraklit {
     static IntStream oneToTen() {
         return IntStream.range(1, 10);
     }

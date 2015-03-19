@@ -1,9 +1,18 @@
 package eu.timepit.java8.stream.examples;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.stream.IntStream;
 
-public class Main01 {
+/**
+ * First look at streams
+ */
+public class S01Intro {
     public static void main(String[] args) {
+        final List<Integer> list = Arrays.asList(1, 2, 3);
+        list.stream().forEach(System.out::println);
+
         final IntStream one = IntStream.of(1);
         final int sum = one.sum();
         System.out.println("one.sum(): " + sum);
